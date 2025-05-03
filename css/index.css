@@ -1,7 +1,16 @@
+@import '../css/global.css';
+@import '../css/vars.css';
+@import '../css/grid.css';
+@import '../css/fonts.css';
+
 html, body {
   height: 100%;
   background-color: #2b474b;
-  color: white;
+}
+
+body {
+  font-size: 1rem ;
+  font-family: montserrat-g, sans-serif;
 }
 
 .slider {
@@ -12,9 +21,54 @@ html, body {
   position: absolute;
   inset: 0;
   background: cover center;
+  will-change: transform;
 
 }
 
 .slider__item {
   overflow: hidden;
+  transform: scale(1.2)!important;
+  transition: 2s ease!important;
 }
+
+.slider__item:not(.swiper-slide-active) {
+  transform: scale(1)!important;
+}
+
+.slider-ui {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+.header {
+  padding: 3.2em 0;
+}
+
+.logo {
+  width: 15.5em;
+}
+
+.logo-img {
+  width: 25em;
+  /* height: 70px; */
+}
+
+.main-menu li {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.main-menu li > *{
+  color: gray;
+}
+
+.button {
+  padding: 1.05em 2.5em;
+  color: var(--white-color);
+  background-color: var(--button-color);
+  border: 1px solid transparent;
+  border-radius: 10em;
+}
+
+
