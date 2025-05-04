@@ -19,3 +19,18 @@ swiper.on('slideChange', function() {
       return swiper.activeIndex === i ? e.classList.add('active') : e.classList.remove('active')
   })
 })
+
+function updateClassBasedOnWidth() {
+  const element = document.querySelector('.submenu');
+  const widthOfScrean = window.innerWidth;
+  if (widthOfScrean < 768) {
+    element.classList.add('visually-hidden');
+  } else {
+    element.classList.remove('visually-hidden');
+  }
+}
+
+updateClassBasedOnWidth();
+
+window.addEventListener('resize', updateClassBasedOnWidth);
+
