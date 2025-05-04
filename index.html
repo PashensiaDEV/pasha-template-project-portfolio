@@ -7,6 +7,8 @@
 
   <link rel="stylesheet" href="libs/swiper/swiper-bundle.min.css">
   <script src="libs/swiper/swiper-bundle.min.js" defer></script>
+  <link rel="stylesheet" href="libs/btn/anim-menu-btn.css">
+  <script src="libs/btn/anim-menu-btn.min.js" defer></script>
 
   <link rel="stylesheet" href="css/index.css">
   <script src="js/app.js" defer></script>
@@ -15,37 +17,71 @@
   <div class="swiper slider">
 
     <div class="slider-ui">
-      <div class="container">
+      <div class="container header-wrapper">
         <div class="header">
 
           <div class="row">
 
             <div class="col col--center ">
               <a href="#" class="logo">
-                <img class="logo-img" src="./img/logo.svg" alt="logo">
+                <img class="logo-img" src="./img/logo.png" alt="logo">
               </a>
             </div>
   
             <div class="col col--right col--center col--lead">
               <nav class="main-menu">
-                <ul>
-                  <li><a href="#">Main</a></li>
-                  <li><a href="#">Info</a></li>
-                  <li><a href="#">Contact</a></li>
-                </ul>
+                <!-- <ul>
+                  <li><a href="#">Stay</a></li>
+                  <li><a href="#">Learn</a></li>
+                  <li><a href="#">Enjoy</a></li>
+                </ul> -->
               </nav>
-              <a href="#" class="button">Plant now</a>
+              <a href="#" class="button button--header">Contact now</a>
             </div>
 
-            <div class="col col--center ">
-              <button class="submenu">plan ur jurnay</button>
+            <div class="col col--center">
+              <button class="submenu anim-menu-btn">
+                <i class="anim-menu-btn__icon anim-menu-btn__icon--close"></i>
+              </button>
             </div>
 
           </div>
 
         </div>
+        <div class="header-content">
+          <div class="header-content__slide active">
+            <h1 class="letters">Stay</h1>
+            <div class="header-content__info">
+              <p>Stay with me, for I turn ideas into real working web projects.
+                Need a website that works for you?
+                I’m a web developer who helps ideas come to life. I build modern, responsive websites — from landing pages to full-scale web apps. No templates, just clean code and a personalized approach.</p><br>
+              <button class="button button--main">Get your first project</button>
+            </div>
+          </div>
+          <div class="header-content__slide">
+            <h1 class="letters">Learn</h1>
+            <div class="header-content__info">
+              <p>Learn, improve, deliver.
+                As a developer, I constantly learn and expand my skills to stay ahead of the latest technologies — so you get a product that's not only high-quality, but modern, efficient, and built to last.</p><br>
+              <button class="button button--main">Get your first project</button>
+            </div>
+          </div>
+        
+          <div class="header-content__slide">
+            <h1 class="letters">Enjoy</h1>
+            <div class="header-content__info">
+              <p>Enjoy the journey.
+                I make the development process smooth and stress-free, so my clients can enjoy every step — from first idea to final launch. Clear communication, reliable updates, and full transparency are part of the experience.</p><br>
+              <button class="button button--main">Get your first project</button>
+            </div>
+          </div>
+        </div>
+
       </div>
+      <div class="header-bottom"></div>
     </div>
+
+    <div class="black_case"></div>
 
     <div class="swiper-wrapper">
 
