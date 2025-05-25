@@ -18,4 +18,6 @@ A clean, responsive, and easy-to-use personal portfolio template for frontend de
 - JavaScript (ES6)
 - BEM methodology for CSS class naming
 
-## 📁 Project Structure
+##🌐 Live Demo
+
+https://pashensiadev.github.io/pasha-template-project-portfolio/
